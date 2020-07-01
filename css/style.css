@@ -975,8 +975,7 @@ textarea {
 }
 
 .form-input:focus,
-.form-input:hover,
-.form-input:active {
+.form-input:hover {
   border: 1px solid var(--accent-color);
 }
 
