@@ -69,7 +69,7 @@
           <h1 class="hero__title">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="button hero__button">
+          <button class="button hero__button" data-modal-open>
             <span class="hero__button-text"> Заказать услугу</span>
           </button>
         </div>
@@ -568,7 +568,7 @@
                 class="subscribe__container-input"
                 type="email"
                 name="name"
-                id="mail"
+                id="email"
                 placeholder="E-mail"
               />
               <button class="button footer__button">
@@ -586,6 +586,92 @@
         <p class="signature__text">2020 | Developed by GoIT Students</p>
       </div> -->
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop-row">
+        <div class="modal">
+          <button class="close-button" data-modal-close>
+            <svg class="close-button__icon" width="11" height="11">
+              <use xlink:href="./img/sprite.svg#close-button"></use>
+            </svg>
+          </button>
+          <form class="form">
+            <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder=" "
+              />
+              <label for="name" class="form-label">Имя</label>
+              <svg class="form__title__icon" width="12" height="12">
+                <use xlink:href="./img/sprite.svg#form-input-name"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder=" "
+              />
+              <label for="tel" class="form-label">Телефон</label>
+              <svg class="form__title__icon" width="13" height="13">
+                <use xlink:href="./img/sprite.svg#form-input-tel"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <input
+                class="form-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder=" "
+              />
+              <label for="mail" class="form-label">Почта</label>
+              <svg class="form__title__icon" width="15" height="12">
+                <use xlink:href="./img/sprite.svg#form-input-email"></use>
+              </svg>
+            </div>
+
+            <div class="form-field textarea">
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                class="form-input"
+                placeholder=" "
+              ></textarea>
+              <label for="comment" class="form-label is--textarea"
+                >Комментарий</label
+              >
+            </div>
+
+            <div class="policy">
+              <label class="form-label-policy">
+                <input
+                  class="form-input-policy"
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                />
+                <span class="icon"></span>
+                <span>
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="#" class="policy__link">Условия договора</a>
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="button submit-button">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
