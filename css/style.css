@@ -891,6 +891,10 @@ textarea {
   margin-bottom: 20px;
 }
 
+.form-input.is--checkbox {
+  width: max-content;
+}
+
 .policy {
   font-weight: 400;
   font-size: 14px;
@@ -913,4 +917,34 @@ textarea {
   right: 0;
   top: 0;
   cursor: pointer;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+}
+
+.form__title__icon,
+.close-button__icon {
+  fill: var(--title-text-color);
+}
+
+.form-field:hover,
+.form-field:hover,
+.form-field:active {
+  color: var(--accent-color);
+}
+
+.form-field:hover .form__title__icon,
+.form-field:hover .form__title__icon,
+.form-field:active .form__title__icon {
+  fill: var(--accent-color);
+}
+
+.form-field:hover input,
+.form-field:hover input,
+.form-field:active input {
+  border: 1px solid var(--accent-color);
+}
+
+.policy__link {
+  text-decoration: underline;
+  color: var(--accent-color);
 }

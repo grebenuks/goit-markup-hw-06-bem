@@ -19,26 +19,32 @@
     <form class="form js-modal-js">
       <button class="close-button">
         <svg class="close-button__icon" width="30" height="30">
-          <use xlink:href="./img/close-button.svg"></use>
+          <use xlink:href="./img/sprite.svg#close-button"></use>
         </svg>
       </button>
       <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
       <div class="form-field">
-        <svg class="form__title-name__icon" width="30" height="30">
-          <use xlink:href="./img/form-input-name.svg"></use>
+        <svg class="form__title__icon" width="12" height="12">
+          <use xlink:href="./img/sprite.svg#form-input-name"></use>
         </svg>
         <label for="name" class="form-lable">Имя</label>
         <input class="form-input" type="text" name="name" id="name" />
       </div>
       <div class="form-field">
+        <svg class="form__title__icon" width="13" height="13">
+          <use xlink:href="./img/sprite.svg#form-input-tel"></use>
+        </svg>
         <label for="tel" class="form-lable">Телефон</label>
         <input class="form-input" type="tel" name="tel" id="tel" />
       </div>
       <div class="form-field">
+        <svg class="form__title__icon" width="15" height="12">
+          <use xlink:href="./img/sprite.svg#form-input-email"></use>
+        </svg>
         <label for="mail" class="form-lable">Почта</label>
         <input class="form-input" type="email" name="mail" id="mail" />
       </div>
-      <div class="textarea">
+      <div class="form-field textarea">
         <label for="comment" class="form-lable"></label>
         <textarea
           name="comment"
@@ -48,7 +54,7 @@
           placeholder="Комментарий"
         ></textarea>
       </div>
-      <div class="policy">
+      <div class="form-field policy">
         <input
           class="form-input is--checkbox"
           type="checkbox"
@@ -56,7 +62,8 @@
           id="policy"
         />
         <label for="policy" class="form-lable"
-          >Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+          >Соглашаюсь с рассылкой и принимаю
+          <a href="#" class="policy__link">Условия договора</a>
         </label>
       </div>
       <button type="submit" class="button submit-button">Отправить</button>
