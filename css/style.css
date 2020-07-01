@@ -172,7 +172,6 @@ body {
   letter-spacing: 0.03em;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 header {
@@ -361,7 +360,7 @@ button {
   width: 696px;
 }
 
-button {
+.button {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -845,4 +844,73 @@ input:focus::-webkit-input-placeholder {
 .projects-list__link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+/* Модальное окно */
+textarea {
+  resize: none;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form {
+  width: 528px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin: auto;
+  padding: 40px;
+  color: var(--primary-text-color);
+  position: relative;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-field {
+  margin-bottom: 28px;
+}
+
+.form-field input {
+  padding: 12px 42px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.textarea {
+  margin-bottom: 20px;
+}
+
+.policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-text-color);
+}
+
+.submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close-button {
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer;
 }
