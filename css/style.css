@@ -1005,7 +1005,6 @@ textarea {
 }
 
 .icon {
-  content: "";
   position: absolute;
   display: flex;
   align-items: center;
