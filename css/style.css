@@ -1036,6 +1036,7 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   padding-left: 24px;
+  cursor: pointer;
 }
 
 .policy {
