@@ -221,6 +221,10 @@ button {
   border: none;
 }
 
+:focus {
+  outline: none;
+}
+
 /* Хедер */
 .header__items {
   display: flex;
